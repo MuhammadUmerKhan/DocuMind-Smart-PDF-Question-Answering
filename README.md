@@ -116,13 +116,6 @@ http://localhost:8501/
 
 ---
 
-## 🛠️ Live Demo
-
-Check out the live demo of the PDF Question Answering System:
-
-
----
-
 ## 💖 Conclusion
 
 This project demonstrates how advanced NLP techniques can be used to build intelligent document analysis systems. By combining efficient text processing, semantic understanding, and interactive interfaces, we’ve created a tool that makes PDF analysis faster, smarter, and more accessible.
