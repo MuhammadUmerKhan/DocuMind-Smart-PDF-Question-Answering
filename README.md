@@ -6,13 +6,14 @@ In today's data-driven world, extracting meaningful insights from documents is c
 
 This repository provides a complete solution for document analysis, including text extraction, semantic understanding, and interactive question answering. By combining advanced NLP techniques with efficient document processing, we aim to make document analysis faster, smarter, and more accessible.
 
-## 💜 Table of Contents
+## 💖 Table of Contents
 - [Problem Statement](#problem-statement)
 - [Methodology](#methodology)
 - [Key Features](#key-features)
 - [Usage Instructions](#usage-instructions)
 - [Running the Project](#running-the-project)
 - [Live Demo](#live-demo)
+- [Future Plans](#future-plans)
 - [License](#license)
 
 ---
@@ -22,7 +23,7 @@ This repository provides a complete solution for document analysis, including te
 Extracting meaningful information from PDF documents is often time-consuming and error-prone. Traditional methods rely on manual searching or keyword-based approaches, which fail to capture the context and nuances of the content. This is especially challenging for large documents or technical papers.
 
 This project aims to develop an intelligent system that can:
-- **Automatically extract and process text** from PDFs 📄
+- **Automatically extract and process text** from PDFs 📝
 - **Understand the semantic context** of the document 🧠
 - **Provide accurate, context-aware answers** to user queries 🔍
 
@@ -31,7 +32,7 @@ This project aims to develop an intelligent system that can:
 ## 🛠️ Methodology
 
 1. **Document Processing:**
-   - Extract text from PDFs using **PyPDF2** 📄➡️📂
+   - Extract text from PDFs using **PyPDF2** 📝➡️📂
    - Split text into meaningful chunks using **RecursiveCharacterTextSplitter** ✂️
    - Handle edge cases like empty pages or unreadable text 🧠
 
@@ -40,7 +41,7 @@ This project aims to develop an intelligent system that can:
    - Create a searchable knowledge base with **FAISS** 🔍
 
 3. **Question Answering:**
-   - Use **TinyLlama-1.1B** (quantized) for efficient, CPU-friendly inference 🦙
+   - Use **TinyLlama-1.1B** (quantized) for efficient, CPU-friendly inference 🦥
    - Implement **RetrievalQA** chain for context-aware answers 🎯
    - Optimize prompts for better answer quality ✨
 
@@ -105,7 +106,17 @@ http://localhost:8501/
 
 ---
 
-## 🔴 Live Demo
+## 🛡️ Future Plans
+
+- If **high computation resources** become available, we plan to explore **more advanced LLMs** with enhanced contextual understanding and reasoning capabilities.
+- Potential upgrades include models like **LLaMA 3, Mistral, or GPT-4** for **more accurate and sophisticated question-answering**.
+- **Multi-document support** for cross-document analysis 📚
+- **Table and image extraction** for richer insights 🎨
+- **Integration with cloud storage** for seamless document access ☁️
+
+---
+
+## 🛠️ Live Demo
 
 Check out the live demo of the PDF Question Answering System:
 
@@ -115,11 +126,6 @@ Check out the live demo of the PDF Question Answering System:
 ## 💖 Conclusion
 
 This project demonstrates how advanced NLP techniques can be used to build intelligent document analysis systems. By combining efficient text processing, semantic understanding, and interactive interfaces, we’ve created a tool that makes PDF analysis faster, smarter, and more accessible.
-
-Future improvements could include:
-- **Multi-document support** for cross-document analysis 📚
-- **Table and image extraction** for richer insights 🎨
-- **Integration with cloud storage** for seamless document access ☁️
 
 ---
 
