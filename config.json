@@ -1,0 +1,9 @@
+{
+    "embedding_model_name": "thenlper/gte-base",
+    "model_id": "mistralai/Mistral-7B-Instruct-v0.3",
+    "chunk_size": 500,
+    "chunk_overlap": 50,
+    "max_length": 1024,
+    "temperature": 0.05,
+    "load_in_4bit": true
+}
