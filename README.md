@@ -65,8 +65,8 @@ This project aims to develop an intelligent system that can:
 
 ### 📂 Clone the Repository
 ```bash
-git clone https://github.com/MuhammadUmerKhan/PDF-QA-System.git
-cd PDF-QA-System
+git clone https://github.com/MuhammadUmerKhan/PDF-Question-and-Answering-System.git
+cd PDF-Question-and-Answering-System
 ```
 
 ### 📦 Install Dependencies
