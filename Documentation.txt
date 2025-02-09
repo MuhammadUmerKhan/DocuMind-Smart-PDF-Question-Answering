@@ -1,0 +1,60 @@
+**DocuMind AI - Smart PDF Question Answering System**
+
+### Overview
+DocuMind AI is an AI-powered document analysis system that allows users to upload PDF files and ask natural language questions. It uses Retrieval-Augmented Generation (RAG) to fetch relevant text from the document and provides accurate, context-aware answers using a lightweight language model.
+
+### Features
+- 📂 **PDF Upload**: Users can upload PDF documents for processing.
+- 🔍 **AI-Powered Question Answering**: Answers user queries based on document content.
+- 📌 **Semantic Search with FAISS**: Retrieves the most relevant text chunks.
+- 🧠 **TinyLlama-1.1B Model**: Lightweight LLM for efficient inference on CPUs.
+- 🌐 **Streamlit Interface**: Simple and user-friendly web app.
+
+### Tech Stack
+- **LangChain**: For managing document chunking, embeddings, and retrieval.
+- **FAISS**: For efficient similarity search.
+- **CTransformers**: For running the TinyLlama-1.1B model.
+- **PyPDF2**: For extracting text from PDFs.
+- **Streamlit**: For building the interactive web interface.
+
+### Workflow
+1. **PDF Processing**: Extracts text using PyPDF2.
+2. **Text Splitting**: Divides text into chunks (1024 tokens with 256 overlap).
+3. **Embedding Generation**: Converts text chunks into vector embeddings.
+4. **Vector Storage**: Stores embeddings using FAISS for fast retrieval.
+5. **Retrieval & Answering**: Finds the most relevant text chunks and feeds them into the LLM to generate answers.
+6. **User Interaction**: Displays the answer in a structured format via Streamlit.
+
+### Code Explanation
+#### **1. Model Management**
+- **download_model()**: Checks if the model file exists; downloads it if missing.
+- **load_llm()**: Loads TinyLlama-1.1B using CTransformers.
+
+#### **2. PDF Processing**
+- **process_pdf(pdf)**: Extracts text from the uploaded PDF.
+
+#### **3. Knowledge Base Creation**
+- **create_knowledge_base(text)**: Converts text into vector embeddings and stores them in FAISS.
+
+#### **4. Question Answering System**
+- **RetrievalQA.from_chain_type()**: Implements RAG by retrieving the top-K (k=3) relevant text chunks before passing them to the LLM.
+- **Prompt Engineering**: Uses a structured prompt to ensure high-quality responses.
+
+#### **5. User Interaction via Streamlit**
+- **st.file_uploader()**: Allows users to upload PDFs.
+- **st.text_input()**: Takes user queries.
+- **st.markdown()**: Displays AI-generated answers.
+
+### Future Enhancements
+- 🚀 **Multi-document Support**: Enable querying across multiple PDFs.
+- 🔎 **Table Extraction**: Enhance handling of tabular data.
+- ☁️ **Cloud Deployment**: Host on cloud platforms for wider accessibility.
+
+### Usage Instructions
+1. Run the Streamlit app.
+2. Upload a PDF document.
+3. Enter a question related to the document.
+4. Receive AI-generated answers with supporting text passages.
+
+### Conclusion
+DocuMind AI simplifies document analysis by combining **semantic search, LLM-powered question answering, and an intuitive UI**, making it a powerful tool for researchers, legal professionals, and technical analysts.
