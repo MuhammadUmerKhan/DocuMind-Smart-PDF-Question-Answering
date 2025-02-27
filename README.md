@@ -99,7 +99,7 @@ http://localhost:8501/
 
 ## 🏆 Key Findings
 
-- **TinyLlama-1.1B** provides a good balance between accuracy and efficiency for CPU-based systems.
+- **llama-3.3-70b-versatile** provides a good balance between accuracy and efficiency for CPU-based systems.
 - **FAISS** enables fast semantic search, even for large documents.
 - **Prompt engineering** significantly improves answer quality and relevance.
 - The system performs well on technical documents, research papers, and reports.
@@ -128,15 +128,5 @@ This project demonstrates how advanced NLP techniques can be used to build intel
 
 ---
 
-### Screenshots
-
-1. **Upload Interface**  
-   ![Upload Interface](https://github.com/MuhammadUmerKhan/PDF-Question-and-Answering-System/blob/main/imgs/ss2.png)
-
-2. **Question Answering**  
-   ![Question Answering](https://github.com/MuhammadUmerKhan/PDF-Question-and-Answering-System/blob/main/imgs/ss1.png)
-
-3. **Supporting Evidence**  
-   ![Supporting Evidence](https://github.com/MuhammadUmerKhan/PDF-Question-and-Answering-System/blob/main/imgs/ss3.png)
-
----
+### Live Demo:
+- (Check out here)[https://langchain-chatbots.streamlit.app/chat_with_your_documents]
