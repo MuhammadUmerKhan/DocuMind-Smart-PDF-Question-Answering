@@ -1,4 +1,4 @@
-# 📝 DocuMind AI: Smart PDF Question Answering System
+# 📝 DocuMind: Smart PDF Question Answering
 
 ![PDF Analysis](https://blog.apify.com/content/images/size/w1200/2023/11/Extract-PDF-documents-for-question-answering-from-a-PDF-1.png)
 
